@@ -1,0 +1,15 @@
+C:\Users\gonca\source\repos\DADProj\PuppetMaster\bin\Debug\net6.0\PuppetMaster.exe
+C:\Users\gonca\source\repos\DADProj\PuppetMaster\bin\Debug\net6.0\PuppetMaster.deps.json
+C:\Users\gonca\source\repos\DADProj\PuppetMaster\bin\Debug\net6.0\PuppetMaster.runtimeconfig.json
+C:\Users\gonca\source\repos\DADProj\PuppetMaster\bin\Debug\net6.0\PuppetMaster.dll
+C:\Users\gonca\source\repos\DADProj\PuppetMaster\bin\Debug\net6.0\PuppetMaster.pdb
+C:\Users\gonca\source\repos\DADProj\PuppetMaster\obj\Debug\net6.0\PuppetMaster.csproj.AssemblyReference.cache
+C:\Users\gonca\source\repos\DADProj\PuppetMaster\obj\Debug\net6.0\PuppetMaster.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gonca\source\repos\DADProj\PuppetMaster\obj\Debug\net6.0\PuppetMaster.AssemblyInfoInputs.cache
+C:\Users\gonca\source\repos\DADProj\PuppetMaster\obj\Debug\net6.0\PuppetMaster.AssemblyInfo.cs
+C:\Users\gonca\source\repos\DADProj\PuppetMaster\obj\Debug\net6.0\PuppetMaster.csproj.CoreCompileInputs.cache
+C:\Users\gonca\source\repos\DADProj\PuppetMaster\obj\Debug\net6.0\PuppetMaster.dll
+C:\Users\gonca\source\repos\DADProj\PuppetMaster\obj\Debug\net6.0\refint\PuppetMaster.dll
+C:\Users\gonca\source\repos\DADProj\PuppetMaster\obj\Debug\net6.0\PuppetMaster.pdb
+C:\Users\gonca\source\repos\DADProj\PuppetMaster\obj\Debug\net6.0\PuppetMaster.genruntimeconfig.cache
+C:\Users\gonca\source\repos\DADProj\PuppetMaster\obj\Debug\net6.0\ref\PuppetMaster.dll

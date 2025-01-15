@@ -1,0 +1,18 @@
+﻿syntax="proto3";
+
+message CompareAndSwapRequest {
+	int32 timeslot = 1;
+	int32 bankSeverId = 2;
+	int32 proposeLeader = 3;
+}
+
+message CompareAndSwapReply {
+	int32 timeslot = 1;
+	int32 boneySeverId = 2;
+	int32 electedLeader = 3;
+}
+
+
+service CompareAndSwapService {
+	rpc CompareAndSwap (CompareAndSwapRequest) returns (CompareAndSwapReply);
+}

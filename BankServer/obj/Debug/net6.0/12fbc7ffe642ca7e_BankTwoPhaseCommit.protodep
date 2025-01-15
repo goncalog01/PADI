@@ -1,0 +1,2 @@
+obj\Debug\net6.0\protos/BankTwoPhaseCommit.cs \
+obj\Debug\net6.0\protos/BankTwoPhaseCommitGrpc.cs: protos/BankTwoPhaseCommit.proto

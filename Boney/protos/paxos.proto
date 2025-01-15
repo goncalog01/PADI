@@ -1,0 +1,44 @@
+﻿syntax="proto3";
+
+message PrepareRequest {
+	int32 timeslot = 1;
+	int32 sequenceNr = 2;
+}
+
+message Promise {
+	int32 timeslot = 1;
+	Status status = 2;
+	int32 writeTimeStamp = 3;
+	int32 value = 4;
+}
+
+message AcceptRequest {
+	int32 timeslot = 1;
+	int32 sequenceNr = 2;
+	int32 value = 3;
+}
+
+message AcceptReply {
+	int32 timeslot = 1;
+	bool accepted = 2;
+}
+
+message AcceptListenerRequest {
+	int32 timeslot = 1;
+	int32 sequenceNr = 2;
+	int32 valueAccepted = 3;
+}
+
+message Empty{}
+
+enum Status{
+	OK = 0;
+	NOK_TS_LOW = 1;
+	NOK_ELECTION_FINISHED = 2;
+}
+
+service PaxosService {
+	rpc Prepare (PrepareRequest) returns (Promise);
+	rpc Accept (AcceptRequest) returns (AcceptReply);
+	rpc Listen (AcceptListenerRequest) returns (Empty);
+}

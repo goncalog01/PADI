@@ -1,0 +1,40 @@
+﻿syntax = "proto3";
+
+service BankClientService {
+	rpc Deposit(DepositRequest) returns (DepositReply);
+	rpc Withdrawal(WithdrawalRequest) returns (WithdrawalReply);
+	rpc ReadBalance(ReadBalanceRequest) returns (ReadBalanceReply);
+}
+
+message DepositRequest {
+	int32 clientId = 1;
+	int32 clientSeqNumber = 2;
+	double value = 3;
+}
+
+message DepositReply {
+	bool primary = 1;
+	optional double balance = 2;
+}
+
+message WithdrawalRequest {
+	int32 clientId = 1;
+	int32 clientSeqNumber = 2;
+	double value = 3;
+}
+
+message WithdrawalReply {
+	bool primary = 1;
+	optional double value = 2;
+	optional double balance = 3;
+}
+
+message ReadBalanceRequest {
+	int32 clientId = 1;
+	int32 clientSeqNumber = 2;
+}
+
+message ReadBalanceReply {
+	bool primary = 1;
+	optional double balance = 2;
+}

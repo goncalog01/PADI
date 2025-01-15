@@ -1,0 +1,50 @@
+﻿syntax = "proto3";
+
+service BankTwoPhaseCommitService {
+	rpc ListPendingRequests(ListPendingRequestsRequest) returns (ListPendingRequestsReply);
+	rpc Propose(ProposeRequest) returns (ProposeReply);
+	rpc Commit(CommitRequest) returns (CommitReply);
+}
+
+message ListPendingRequestsRequest {
+	int32 lastKnownSequenceNumber = 1;
+	int32 sender = 2;
+	int32 slot = 3;
+}
+
+message ListPendingRequestsReply {
+	bool ack = 1;
+	repeated CommandGRPC commands = 2;
+}
+
+message ProposeRequest {
+	CommandGRPC command = 1;
+	int32 sender = 2;
+}
+
+message ProposeReply {
+	bool ack = 1;
+}
+
+message CommitRequest {
+	CommandGRPC command = 1;
+}
+
+message CommitReply {
+
+}
+
+message CommandGRPC {
+	int32 clientId = 1;
+	int32 clientSeqNumber = 2;
+	int32 seqNumber = 3;
+	int32 slot = 4;
+	CommandType type = 5;
+	optional double value = 6;
+}
+
+enum CommandType {
+	DEPOSIT = 0;
+	READ = 1;
+	WITHDRAW = 2;
+}

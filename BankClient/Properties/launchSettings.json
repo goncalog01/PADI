@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BankClient": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\gonca\\Downloads\\configuration_sample.txt 7"
+    }
+  }
+}
